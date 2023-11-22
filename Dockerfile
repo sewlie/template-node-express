@@ -8,8 +8,6 @@ RUN yarn install --frozen-lockfile
 
 COPY . .
 
-RUN yarn build
-
 FROM node:slim
 
 ENV NODE_ENV production
